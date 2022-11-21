@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Jost:wght@500&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0%;
+  margin: 0%;
+}
+
+.navbar {
+  max-width: 1430px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: 40px;
+  border-bottom: 2px solid #eaeaea;
+}
+.links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  min-width: 100%;
+}
+.link {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  color: #041e42;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  height: 40px;
+}
+.underline {
+  border-bottom: #041e42 solid 2px;
+}
+@media screen and (max-width: 1000px) {
+  .navbar {
+    display: none;
+  }
+}

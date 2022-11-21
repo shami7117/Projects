@@ -1,0 +1,46 @@
+.container{
+min-height: 100vh;
+    border: solid blue 5px;
+    text-align: center;
+    display: grid;
+    margin: 5rem;
+grid-template-areas: 
+"a a"
+"b b"
+"c c"
+;
+}
+*{
+    padding: 0 0;
+        margin: 0 0;
+}
+.cell-1{
+    border: solid black 3px;
+    background-color: #222;
+    grid-area: a;
+}
+.cell-2 {
+    border: solid black 3px;
+    background-color: #f245f2;
+    grid-area: b;
+}
+.cell-3 {
+    border: solid black 3px;
+    background-color: #423fff;
+}
+.cell-4 {
+    border: solid black 3px;
+    background-color: #8f7;
+}
+.cell-5 {
+    border: solid black 3px;
+    background-color: #ff920f;
+}
+.cell-6 {
+    border: solid black 3px;
+    background-color: #99f9ff;
+}
+.cell-7 {
+    border: solid black 3px;
+    background-color: hsl(95, 92%, 49%);
+}

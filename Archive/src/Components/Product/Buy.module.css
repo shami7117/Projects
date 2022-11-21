@@ -1,0 +1,250 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Montserrat:wght@300&family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400&family=Montserrat:wght@300&family=Open+Sans:wght@500&family=Poppins:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+.buy {
+  max-width: 1430px;
+  height: 483px;
+  position: absolute;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 38px;
+  padding-right: 35px;
+}
+.buyHeading {
+  width: 292px;
+  height: 40px;
+  align-self: flex-start;
+  margin-bottom: 50px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.BuyInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+.singleCard {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  padding: 8px;
+  background: #ffffff;
+  border: 1.5px solid #e5e5e5;
+  border-radius: 12px;
+}
+.singleCard h1 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+.singleCard h5 {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+}
+.singleCard p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+}
+.singleCard h3 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
+.cardImage {
+  width: 100%;
+  height: 122px;
+}
+
+.circle {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.Cards {
+  width: 55%;
+}
+.CardItem {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 20px;
+}
+.cardtxt {
+  width: 45%;
+}
+.SingleCheck {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.SingleCheck p {
+  width: 730px;
+  height: 28px;
+  margin-left: 5px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  /* identical to box height, or 175% */
+  margin-top: -7px;
+  color: #000000;
+}
+.priceBtn div {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: center;
+}
+.priceBtn div p {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  color: #000000;
+}
+.priceBtn span {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 33px;
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 0px;
+  /* #000000 */
+
+  color: #000000;
+}
+.btn button {
+  max-width: 268px;
+  height: 52.8px;
+  background-color: red;
+  border-radius: 5px;
+  outline: none;
+  border: transparent;
+  cursor: pointer;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 25px;
+  /* identical to box height, or 139% */
+
+  display: flex;
+  align-items: center;
+
+  color: #ffffff;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+/* *********** */
+/* Reponisivnes */
+/* ************ */
+
+@media screen and (max-width: 1000px) {
+  .BuyInfo {
+    flex-direction: column;
+  }
+  .Cards {
+    width: 100%;
+  }
+  .cardtxt {
+    width: 100%;
+  }
+  .buyHeading {
+    align-self: center;
+    margin-top: 50px;
+  }
+  .SingleCheck {
+    margin-left: 0px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .CardItem {
+    grid-template-columns: auto;
+  }
+  .singleCard {
+    margin-bottom: 25px;
+  }
+  .buy {
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .buy {
+    margin-top: 350px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .SingleCheck {
+    margin-bottom: 50px;
+  }
+  .buy {
+    margin-top: 450px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .SingleCheck {
+    margin-bottom: 200px;
+  }
+  .buy {
+    margin-top: 700px;
+  }
+}
+@media screen and (max-width: 250px) {
+  .btn button {
+    height: 70px;
+  }
+  .buy {
+    margin-top: 800px;
+  }
+}
+
+@media screen and (max-width: 210px) {
+  .SingleCheck {
+    margin-bottom: 350px;
+  }
+  .btn button {
+    height: 100px;
+  }
+}
